@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            .title 
+            {
+                color: antiquewhite;
+                font-size: 30px;
+                text-align: center;
+            }
+            .total_b
+            {
+                background-color : darkslategray;
+                margin-left :590px;
+                margin-right :590px;
+                width : 22.25%;
+                background-attachment:fixed;
+                background-size:100% 100%;
+            }
+            .solution
+            {
+                width : 104.55%;
+                color : black;
+                background-color:antiquewhite;
+                border-radius:4px;
+                padding : 15px 35px;
+                text-align:right;
+            }
+
+          
+            .num
+            {
+                background-color :antiquewhite;
+                color: black;
+                border :none;
+                padding : 15px 35px;
+                border-radius : 4px; 
+                text-align: center;
+                margin : 1px 0.4px;
+                display : inline-block;
+                width : 100%
+            }
+            
+
+        </style>
+        <script type="text/javascript" src="calcy.js"></script>
+        
+    </head>
+    <body>
+        <div class="total_b">
+            <div class= "title">|| CALCULATOR ||</div>
+            <table>
+
+                <tr>
+                    <td colspan="3"><input type="text" class="solution" id="f_ans" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="num" value="7" onclick="show('7')" /></td>
+                    <td><input type="button" class="num" value="8" onclick="show('8')" /></td>
+                    <td><input type="button" class="num" value="9" onclick="show('9')" /></td>
+                    <td><input type="button" class="num" value="+" onclick="show('+')" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="num" value="4" onclick="show('4')" /></td>
+                    <td><input type="button" class="num" value="5" onclick="show('5')" /></td>
+                    <td><input type="button" class="num" value="6" onclick="show('6')" /></td>
+                    <td><input type="button" class="num" value="*" onclick="show('*')" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="num" value="1" onclick="show('1')" /></td>
+                    <td><input type="button" class="num" value="2" onclick="show('2')" /></td>
+                    <td><input type="button" class="num" value="3" onclick="show('3')" /></td>
+                    <td><input type="button" class="num" value="/" onclick="show('/')" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="num" value="B" onclick="backspace()" /></td>
+                    <td><input type="button" class="num" value="0" onclick="show('0')" /></td>
+                    <td><input type="button" class="num" value="." onclick="show('.')" /></td>
+                    <td><input type="button" class="num" value="=" onclick="solution()" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="num" value="C" onclick="clearInput()" /></td>
+                    <td><input type="button" class="num" value="^" onclick="show('^')" /></td>
+                    <td><input type="button" class="num" value="s" onclick="show('^0.5')" /></td>
+                    <td><input type="button" class="num" value="%"  onclick="show('%')"/></td>
+                </tr>
+
+            </table>
+        </div>
+    </body>
+
+</html>
