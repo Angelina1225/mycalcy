@@ -1,1 +1,1 @@
-# mycalcy
+# CALCULATOR
